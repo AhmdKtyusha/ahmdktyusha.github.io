@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>PPLG SMK Negeri 8 Semarang</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    </head>
+    <body>
+       <section class="h-100 w-100 bg-white" style="box-sizing: border-box">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      .header-4-2 .modal-item.modal {
+        top: 2rem;
+      }
+
+      .header-4-2 .navbar,
+      .header-4-2 .hero {
+        padding: 3rem 2rem;
+      }
+
+      .header-4-2 .navbar-light .navbar-nav .nav-link {
+        font: 300 18px/1.5rem Poppins, sans-serif;
+        color: #1d1e3c;
+        transition: 0.3s;
+      }
+
+      .header-4-2 .navbar-light .navbar-nav .nav-link:hover {
+        font: 600 18px/1.5rem Poppins, sans-serif;
+        color: #1d1e3c;
+        transition: 0.3s;
+      }
+
+      .header-4-2 .navbar-light .navbar-nav .active>.nav-link,
+      .header-4-2 .navbar-light .navbar-nav .nav-link.active,
+      .header-4-2 .navbar-light .navbar-nav .nav-link.show,
+      .header-4-2 .navbar-light .navbar-nav .show>.nav-link {
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .header-4-2 .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+
+      .header-4-2 .btn:focus,
+      .header-4-2 .btn:active {
+        outline: none !important;
+      }
+
+      .header-4-2 .btn-fill {
+        font: 600 18px / normal Poppins, sans-serif;
+        background-color: #27c499;
+        border-radius: 12px;
+        padding: 12px 32px;
+        transition: 0.3s;
+      }
+
+      .header-4-2 .btn-fill:hover {
+        --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        transition: 0.3s;
+      }
+
+      .header-4-2 .btn-no-fill {
+        font: 300 18px/1.75rem Poppins, sans-serif;
+        color: #1d1e3c;
+        padding: 12px 32px;
+        transition: 0.3s;
+      }
+
+      .header-4-2 .modal-item .modal-dialog .modal-content {
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+
+      .header-4-2 .responsive li a {
+        padding: 1rem;
+        transition: 0.3s;
+      }
+
+      .header-4-2 .text-caption {
+        font: 600 0.875rem/1.625 Poppins, sans-serif;
+        margin-bottom: 2rem;
+        color: #27c499;
+      }
+
+      .header-4-2 .left-column {
+        margin-bottom: 2.75rem;
+        width: 100%;
+      }
+
+      .header-4-2 .right-column {
+        width: 100%;
+      }
+
+      .header-4-2 .title-text-big {
+        font: 600 2.25rem/2.5rem Poppins, sans-serif;
+        margin-bottom: 2rem;
+        color: #272e35;
+      }
+
+      .header-4-2 .btn-try {
+        font: 600 1rem/1.5rem Poppins, sans-serif;
+        padding: 1rem 1.5rem;
+        border-radius: 0.75rem;
+        background-color: #27c499;
+        transition: 0.3s;
+      }
+
+      .header-4-2 .btn-try:hover {
+        --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        transition: 0.3s;
+      }
+
+      .header-4-2 .btn-outline {
+        font: 400 1rem/1.5rem Poppins, sans-serif;
+        border: 1px solid #555b61;
+        color: #555b61;
+        padding: 1rem 1.5rem;
+        border-radius: 0.75rem;
+        background-color: transparent;
+        transition: 0.3s;
+      }
+
+      .header-4-2 .btn-outline:hover {
+        border: 1px solid #27c499;
+        color: #27c499;
+        transition: 0.3s;
+      }
+
+      .header-4-2 .btn-outline:hover div path {
+        fill: #27c499;
+        transition: 0.3s;
+      }
+
+      @media (min-width: 576px) {
+        .header-4-2 .modal-item .modal-dialog {
+          max-width: 95%;
+          border-radius: 12px;
+        }
+
+        .header-4-2 .navbar {
+          padding: 3rem 2rem;
+        }
+
+        .header-4-2 .hero {
+          padding: 3rem 2rem 5rem;
+        }
+
+        .header-4-2 .title-text-big {
+          font-size: 3rem;
+          line-height: 1.2;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .header-4-2 .navbar {
+          padding: 3rem 4rem;
+        }
+
+        .header-4-2 .hero {
+          padding: 3rem 4rem 5rem;
+        }
+
+        .header-4-2 .left-column {
+          margin-bottom: 3rem;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .header-4-2 .navbar-expand-lg .navbar-nav .nav-link {
+          padding-right: 1.25rem;
+          padding-left: 1.25rem;
+        }
+
+        .header-4-2 .navbar {
+          padding: 3rem 6rem;
+        }
+
+        .header-4-2 .hero {
+          padding: 3rem 6rem 5rem;
+        }
+
+        .header-4-2 .left-column {
+          width: 50%;
+          margin-bottom: 0;
+        }
+
+        .header-4-2 .right-column {
+          width: 50%;
+        }
+
+        .header-4-2 .title-text-big {
+          font-size: 3.75rem;
+          line-height: 1.2;
+        }
+      }
+    </style>
+    <div class="header-4-2 container-xxl mx-auto p-0 position-relative" style="font-family: 'Poppins', sans-serif">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="#">
+          <img style="margin-right: 0.75rem"
+            src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header2/Header-2-5.png" alt="" />
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-item">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="modal-item modal fade" id="targetModal-item" tabindex="-1" role="dialog"
+          aria-labelledby="targetModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content bg-white border-0">
+              <div class="modal-header border-0" style="padding: 2rem; padding-bottom: 0">
+                <a class="modal-title" id="targetModalLabel">
+                  <img style="margin-top: 0.5rem"
+                    src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header2/Header-2-5.png"
+                    alt="" />
+                </a>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" style="padding: 2rem; padding-top: 0; padding-bottom: 0">
+                <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sekolah</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Siswa</a>
+                  </li>
+                  <li class="nav-item">
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-footer border-0 gap-3" style="padding: 2rem; padding-top: 0.75rem">
+                <button class="btn btn-fill text-white">SMK 8 IDOLA</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sekolah</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Siswa</a>
+            </li>
+            <li class="nav-item">
+          </ul>
+          <div class="gap-3">
+            <button class="btn btn-fill text-white">SMK 8 IDOLA</button>
+          </div>
+        </div>
+      </nav>
+
+      <div>
+        <div class="mx-auto d-flex flex-lg-row flex-column hero">
+          <!-- Left Column -->
+          <div
+            class="left-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center">
+            <p class="text-caption">By : Ahmad Nur Hidayat X PPLG 2 / 01</p>
+            <h1 class="title-text-big">
+              Kompetensi Keahlian PPLG<br class="d-lg-block d-none" />
+              SMK Negeri 8 Semarang
+            </h1>
+            <div class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
+              <button class="btn d-inline-flex mb-md-0 btn-try text-white">
+                Apa itu PPLG ?
+              </button>
+              <button class="btn btn-outline">
+                <div class="d-flex align-items-center">
+                  <svg class="me-2" width="13" height="12" viewBox="0 0 13 13" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.9293 7.99988L6.66668 5.15788V10.8419L10.9293 7.99988ZM12.9173 8.27722L5.85134 12.9879C5.80115 13.0213 5.74283 13.0404 5.6826 13.0433C5.62238 13.0462 5.5625 13.0327 5.50934 13.0042C5.45619 12.9758 5.41175 12.9334 5.38075 12.8817C5.34976 12.83 5.33337 12.7708 5.33334 12.7105V3.28922C5.33337 3.22892 5.34976 3.16976 5.38075 3.11804C5.41175 3.06633 5.45619 3.02398 5.50934 2.99552C5.5625 2.96706 5.62238 2.95355 5.6826 2.95644C5.74283 2.95932 5.80115 2.97848 5.85134 3.01188L12.9173 7.72255C12.963 7.75299 13.0004 7.79423 13.0263 7.84261C13.0522 7.89099 13.0658 7.94501 13.0658 7.99988C13.0658 8.05475 13.0522 8.10878 13.0263 8.15716C13.0004 8.20553 12.963 8.24678 12.9173 8.27722Z"
+                      fill="#555B61" />
+                  </svg>
+                  Scroll Kebawah
+                </div>
+              </button>
+            </div>
+          </div>
+          <!-- Right Column -->
+          <div class="right-column text-center d-flex justify-content-lg-end justify-content-center pe-0">
+            <img id="img-fluid" class="h-auto mw-100"
+              src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header4/Header-4-2.png"
+              alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><section class="h-100 w-100 bg-white" style="box-sizing: border-box">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      .content-2-2 .btn:focus,
+      .content-2-2 .btn:active {
+        outline: none !important;
+      }
+
+      .content-2-2 .title-text {
+        padding-top: 5rem;
+        margin-bottom: 3rem;
+      }
+
+      .content-2-2 .text-title {
+        font: 600 2.25rem/2.5rem Poppins, sans-serif;
+        color: #121212;
+        margin-bottom: 0.625rem;
+      }
+
+      .content-2-2 .text-caption {
+        color: #121212;
+        font-weight: 300;
+      }
+
+      .content-2-2 .column {
+        padding: 2rem 2.25rem;
+      }
+
+      .content-2-2 .icon {
+        margin-bottom: 1.5rem;
+      }
+
+      .content-2-2 .icon-title {
+        font: 500 1.5rem/2rem Poppins, sans-serif;
+        margin-bottom: 0.625rem;
+        color: #121212;
+      }
+
+      .content-2-2 .icon-caption {
+        font: 400 1rem/1.625 Poppins, sans-serif;
+        letter-spacing: 0.025em;
+        color: #565656;
+      }
+
+      .content-2-2 .card-block {
+        padding: 1rem 1rem 5rem;
+      }
+
+      .content-2-2 .card {
+        padding: 1.75rem;
+        background-color: #eef6f4;
+        border-radius: 0.75rem;
+        border: 1px solid #27c499;
+      }
+
+      .content-2-2 .card-title {
+        font: 600 1.5rem/2rem Poppins, sans-serif;
+        margin-bottom: 0.625rem;
+        color: #000000;
+      }
+
+      .content-2-2 .card-caption {
+        font: 300 1rem/1.5rem Poppins, sans-serif;
+        color: #565656;
+        letter-spacing: 0.025em;
+        margin-bottom: 0;
+      }
+
+      .content-2-2 .btn-card {
+        font: 700 1rem/1.5rem Poppins, sans-serif;
+        background-color: #27c499;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        border-radius: 0.75rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .content-2-2 .btn-card:hover {
+        --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+
+      .content-2-2 .btn-outline {
+        font: 400 1rem/1.5rem Poppins, sans-serif;
+        color: #979797;
+        border: 1px solid #979797;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        border-radius: 0.75rem;
+      }
+
+      .content-2-2 .btn-outline:hover {
+        border: 1px solid #27c499;
+        color: #27c499;
+      }
+
+      .content-2-2 .card-text {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      .content-2-2 .grid-padding {
+        padding: 0rem 1rem 3rem;
+      }
+
+      @media (min-width: 576px) {
+        .content-2-2 .grid-padding {
+          padding: 0rem 2rem 3rem;
+        }
+
+        .content-2-2 .card-block {
+          padding: 3rem 2rem 5rem;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .content-2-2 .grid-padding {
+          padding: 0rem 4rem 3rem;
+        }
+
+        .content-2-2 .card-block {
+          padding: 3rem 4rem 5rem;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .content-2-2 .grid-padding {
+          padding: 1rem 6rem 3rem;
+        }
+
+        .content-2-2 .card-block {
+          padding: 3rem 6rem 5rem;
+        }
+
+        .content-2-2 .column {
+          padding: 0rem 2.25rem;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .content-2-2 .grid-padding {
+          padding: 1rem 10rem 3rem;
+        }
+
+        .content-2-2 .card-block {
+          padding: 3rem 6rem 5rem;
+        }
+
+        .content-2-2 .card-btn-space {
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+
+        .content-2-2 .btn-card,
+        .content-2-2 .btn-outline {
+          width: 95%;
+          float: right;
+        }
+      }
+
+      @media (max-width: 980px) {
+        .content-2-2 .card-btn-space {
+          width: 100%;
+        }
+      }
+    </style>
+    <div class="content-2-2 container-xxl mx-auto p-0  position-relative" style="font-family: 'Poppins', sans-serif">
+      <div class="text-center title-text">
+        <h1 class="text-title">Apa itu PPLG ?</h1>
+        <p class="text-caption" style="margin-left: 3rem; margin-right: 3rem">
+          PPLG adalah singkatan dari Pengembangan Perangkat Lunak dan Gim dan 
+          merupakan sebuah jurusan yang ada di Sekolah Menengah Kejuruan (SMK).
+          Berikut ini adalah Keuntungan memilih jurusan PPLG
+        </p>
+      </div>
+
+      <div class="grid-padding text-center">
+        <div class="row">
+          <div class="col-lg-4 column">
+            <div class="icon">
+              <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-5.png"
+                alt="" />
+            </div>
+            <h3 class="icon-title">Mudah Dipelajari</h3>
+            <p class="icon-caption">
+              Saat sedang Belajar PPLG, kita hanya memperlukan
+              PC / Laptop dan Koneksi Internet saja.<br />
+            </p>
+          </div>
+          <div class="col-lg-4 column">
+            <div class="icon">
+              <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-6.png"
+                alt="" />
+            </div>
+            <h3 class="icon-title">Pemahaman Luas</h3>
+            <p class="icon-caption">
+              Siswa PPLG cenderung mempunyai Pemahaman
+              dan Wawasan yang luas tentang Teknologi.<br />
+            </p>
+          </div>
+          <div class="col-lg-4 column">
+            <div class="icon">
+              <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-7.png"
+                alt="" />
+            </div>
+            <h3 class="icon-title">Pekerjaan Terjamin</h3>
+            <p class="icon-caption">
+              Lulusan PPLG akan mudah mencari Pekerjaan
+              karena sudah terbiasa mengoperasikan Komputer.<br />
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-block">
+        <div class="card">
+          <div class="d-flex flex-lg-row flex-column align-items-center">
+            <div class="me-lg-3">
+              <img
+                src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-1%20(1).png"
+                alt="" />
+            </div>
+            <div class="flex-grow-1 text-lg-start text-center card-text">
+              <h3 class="card-title">
+                Pengertian PPLG secara Lengkap
+              </h3>
+              <p class="card-caption">
+                PPLG adalah sebuah jurusan yang mempelajari dan mendalami semua 
+                cara-cara pengembangan perangkat lunak termasuk pembuatan, pemeliharaan, 
+                manajemen organisasi pengembangan perangkat lunak dan manajemen kualitas.<br class="d-none d-lg-block" />
+              </p>
+            </div>
+            <div class="card-btn-space">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><section class="h1-00 w-100 bg-white" style="box-sizing: border-box">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      .content-3-2 .btn:focus,
+      .content-3-2 .btn:active {
+        outline: none !important;
+      }
+
+      .content-3-2 {
+        padding: 5rem 2rem;
+      }
+
+      .content-3-2 .img-hero {
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+
+      .content-3-2 .right-column {
+        width: 100%;
+      }
+
+      .content-3-2 .title-text {
+        font: 600 1.875rem/2.25rem Poppins, sans-serif;
+        margin-bottom: 2.5rem;
+        letter-spacing: -0.025em;
+        color: #121212;
+      }
+
+      .content-3-2 .title-caption {
+        font: 500 1.5rem/2rem Poppins, sans-serif;
+        margin-bottom: 1.25rem;
+        color: #121212;
+      }
+
+      .content-3-2 .circle {
+        font: 500 1.25rem/1.75rem Poppins, sans-serif;
+        height: 3rem;
+        width: 3rem;
+        margin-bottom: 1.25rem;
+        border-radius: 9999px;
+        background-color: #27c499;
+      }
+
+      .content-3-2 .text-caption {
+        font: 400 1rem/1.75rem Poppins, sans-serif;
+        letter-spacing: 0.025em;
+        color: #565656;
+      }
+
+      .content-3-2 .btn-learn {
+        font: 600 1rem/1.5rem Poppins, sans-serif;
+        padding: 1rem 2.5rem;
+        background-color: #27c499;
+        transition: 0.3s;
+        letter-spacing: 0.025em;
+        border-radius: 0.75rem;
+      }
+
+      .content-3-2 .btn:hover {
+        background-color: #45dbb2;
+        transition: 0.3s;
+      }
+
+      @media (min-width: 768px) {
+        .content-3-2 .title-text {
+          font: 600 2.25rem/2.5rem Poppins, sans-serif;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .content-3-2 .img-hero {
+          width: 50%;
+          margin-bottom: 0;
+        }
+
+        .content-3-2 .right-column {
+          width: 50%;
+        }
+
+        .content-3-2 .circle {
+          margin-right: 1.25rem;
+          margin-bottom: 0;
+        }
+      }
+    </style>
+    <div class="content-3-2 container-xxl mx-auto  position-relative" style="font-family: 'Poppins', sans-serif">
+      <div class="d-flex flex-lg-row flex-column align-items-center">
+        <!-- Left Column -->
+        <div class="img-hero text-center justify-content-center d-flex">
+          <img id="hero" class="img-fluid"
+            src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-1.png"
+            alt="" />
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column d-flex flex-column align-items-lg-start align-items-center text-lg-start text-center">
+          <h2 class="title-text">Peluang Kerja Lulusan PPLG</h2>
+          <ul style="padding: 0; margin: 0">
+            <li class="list-unstyled" style="margin-bottom: 2rem">
+              <h4
+                class="title-caption d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                <span class="circle text-white d-flex align-items-center justify-content-center">
+                  1
+                </span>
+                Web Programmer
+              </h4>
+              <p class="text-caption">
+                Web programmer adalah coder, artinya tugas utamanya 
+                adalah menulis kode dengan memanfaatkan bahasa pemrograman. Mulai dari website atau 
+                aplikasi yang basisnya adalah web.<br class="d-sm-inline d-none" />
+                
+              </p>
+            </li>
+            <li class="list-unstyled" style="margin-bottom: 2rem">
+              <h4
+                class="title-caption d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                <span class="circle text-white d-flex align-items-center justify-content-center">
+                  2
+                </span>
+                Game Developer
+              </h4>
+              <p class="text-caption">
+                Adalah seorang pengembang perangkat lunak yang mengkhususkan diri 
+                dalam pengembangan permainan video – proses dan disiplin-disiplin 
+                terkait pembuatan permainan video.<br class="d-sm-inline d-none" />
+                
+              </p>
+            </li>
+            <li class="list-unstyled" style="margin-bottom: 4rem">
+              <h4
+                class="title-caption d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                <span class="circle text-white d-flex align-items-center justify-content-center">
+                  3
+                </span>
+                Data Analyst
+              </h4>
+              <p class="text-caption">
+                Seorang data analyst mengolah dan 
+                menerjemahkan data yang ada ke dalam suatu laporan 
+                yang mudah dipahami oleh manajemen perusahaan.<br class="d-sm-inline d-none" />
+              </p>
+            </li>
+          </ul>
+          <button class="btn btn-learn text-white">Yuk Masuk PPLG !</button>
+        </div>
+      </div>
+    </div>
+  </section> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+  </html>
